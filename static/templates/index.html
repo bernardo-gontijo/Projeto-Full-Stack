@@ -109,6 +109,23 @@
 
 <hr>
 
+<!-- ===== DASHBOARD ===== -->
+<section id="dashboard">
+    <h2>Dashboard</h2>
+
+    <label for="tipoGrafico">Ver por:</label>
+    <select id="tipoGrafico" onchange="carregarDashboard()">
+        <option value="por_unidade">Unidade</option>
+        <option value="por_plano">Plano</option>
+    </select>
+
+    <div style="max-width: 600px; margin-top: 20px;">
+        <canvas id="graficoDashboard"></canvas>
+    </div>
+</section>
+
+<hr>
+
 <!-- ===== EXPORTAR CSV ===== -->
 <section id="exportar">
     <button onclick="exportarCSV()">Exportar CSV</button>

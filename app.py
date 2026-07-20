@@ -58,6 +58,20 @@ def deletar_registro(id):
 
     return jsonify({"mensagem": f"Registro {id} removido com sucesso"}), 200
 
+@app.route("/estatisticas")
+def estatisticas():
+    # Reagrega direto do CSV mais atual, garantindo dados frescos
+    global df
+    df = pd.read_csv(CSV_PATH)
+
+    por_unidade = df["unidade"].value_counts().to_dict()
+    por_plano = df["plano"].value_counts().to_dict()
+
+    return jsonify({
+        "por_unidade": por_unidade,
+        "por_plano": por_plano
+    })
+
 @app.route("/exportar")
 def exportar_csv():
     df.to_csv(CSV_PATH, index=False)
