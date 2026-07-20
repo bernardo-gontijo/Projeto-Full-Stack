@@ -1,0 +1,247 @@
+/* ======================================================
+   SISTEMA DE GESTÃO DE ACADEMIA - style.css
+   ====================================================== */
+
+/* ===== VARIÁVEIS E RESET ===== */
+:root {
+  --cor-primaria: #ff6b35;      /* laranja energia - remete a treino/força */
+  --cor-primaria-escura: #e6521f;
+  --cor-secundaria: #1e293b;    /* cinza-chumbo, tipo "academia industrial" */
+  --cor-sucesso: #16a34a;
+  --cor-perigo: #dc2626;
+  --cor-perigo-escura: #b91c1c;
+  --cor-fundo: #f4f4f5;
+  --cor-card: #ffffff;
+  --cor-texto: #1e293b;
+  --cor-texto-claro: #64748b;
+  --cor-borda: #e2e8f0;
+  --fonte: 'Segoe UI', system-ui, sans-serif;
+  --raio: 10px;
+  --sombra: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--fonte);
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px;
+  line-height: 1.5;
+}
+
+/* ===== CABEÇALHO ===== */
+h1 {
+  text-align: center;
+  color: var(--cor-secundaria);
+  border-bottom: 4px solid var(--cor-primaria);
+  padding-bottom: 12px;
+  margin-bottom: 32px;
+  letter-spacing: 0.5px;
+}
+
+h2 {
+  color: var(--cor-secundaria);
+  font-size: 1.2rem;
+  margin-bottom: 16px;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: var(--cor-borda);
+  margin: 32px 0;
+}
+
+/* ===== SEÇÕES COMO "CARDS" ===== */
+section {
+  background-color: var(--cor-card);
+  border-radius: var(--raio);
+  box-shadow: var(--sombra);
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+/* ===== FORMULÁRIO DE CADASTRO ===== */
+#formCadastro {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-width: 420px;
+}
+
+#formCadastro input,
+#formCadastro select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--cor-borda);
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-family: var(--fonte);
+  background-color: #fff;
+}
+
+#formCadastro input:focus,
+#formCadastro select:focus {
+  outline: none;
+  border-color: var(--cor-primaria);
+  box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.15);
+}
+
+/* Botão de cadastrar - estilo "matricule-se" */
+input[type="button"][value="Cadastrar"] {
+  background-color: var(--cor-primaria);
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+input[type="button"][value="Cadastrar"]:hover {
+  background-color: var(--cor-primaria-escura);
+}
+
+#mensagemCadastro {
+  margin-top: 12px;
+  font-weight: 500;
+  color: var(--cor-sucesso);
+}
+
+/* ===== BUSCA POR ID ===== */
+#busca input[type="number"] {
+  padding: 10px 12px;
+  border: 1px solid var(--cor-borda);
+  border-radius: 6px;
+  width: 160px;
+  margin-right: 8px;
+}
+
+#busca button {
+  padding: 10px 18px;
+  background-color: var(--cor-secundaria);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+#busca button:hover {
+  background-color: #334155;
+}
+
+#resultadoBusca {
+  margin-top: 14px;
+  padding: 12px;
+  background-color: var(--cor-fundo);
+  border-left: 4px solid var(--cor-primaria);
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+/* ===== TABELA DE CLIENTES ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+thead {
+  background-color: var(--cor-secundaria);
+}
+
+thead th {
+  color: #fff;
+  text-align: left;
+  padding: 12px;
+  font-weight: 600;
+}
+
+tbody td {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--cor-borda);
+}
+
+tbody tr:hover {
+  background-color: #fff7ed; /* leve tom laranja no hover, tipo "área de check-in" */
+}
+
+tbody tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+/* ===== BOTÕES DE AÇÃO (EDITAR / EXCLUIR) ===== */
+tbody button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  margin-right: 6px;
+  transition: opacity 0.2s ease;
+}
+
+tbody button:first-of-type {
+  background-color: var(--cor-primaria); /* Editar */
+  color: #fff;
+}
+
+tbody button:last-of-type {
+  background-color: var(--cor-perigo); /* Excluir */
+  color: #fff;
+}
+
+tbody button:hover {
+  opacity: 0.85;
+}
+
+/* ===== EXPORTAR CSV ===== */
+#exportar {
+  text-align: center;
+  background: none;
+  box-shadow: none;
+}
+
+#exportar button {
+  background-color: var(--cor-sucesso);
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+#exportar button:hover {
+  background-color: #15803d;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 600px) {
+  body {
+    padding: 12px;
+  }
+
+  section {
+    padding: 16px;
+  }
+
+  #formCadastro {
+    max-width: 100%;
+  }
+
+  #busca input[type="number"] {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+}
