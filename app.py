@@ -1,9 +1,14 @@
-from flask import Flask, request, jsonify, send_file
+from flask import Flask, request, jsonify, send_file, render_template, Response
 import pandas as pd
+import plotly.express as px
 
 app = Flask(__name__)
 CSV_PATH = "dados.csv"
 df = pd.read_csv(CSV_PATH)
+
+@app.route("/")
+def inicio():
+    return render_template("index.html")
 
 @app.route("/registros", methods=["GET"])
 def listar():
@@ -26,6 +31,50 @@ def criar():
     df.to_csv(CSV_PATH, index=False)
 
     return jsonify(novo), 201
+
+@app.route("/estatisticas")
+def estatisticas():
+    # Reagrega direto do CSV mais atual
+    global df
+    df = pd.read_csv(CSV_PATH)
+
+    tipo = request.args.get("tipo", "grafico_barra")
+
+    if tipo == "grafico_linha":
+        # Número de alunos matriculados por mês
+        temp = df.copy()
+        temp["mes"] = pd.to_datetime(temp["data_matricula"]).dt.to_period("M").astype(str)
+        contagem = temp.groupby("mes").size().reset_index(name="quantidade")
+        contagem = contagem.sort_values("mes")
+
+        fig = px.line(
+            contagem, x="mes", y="quantidade", markers=True,
+            title="Alunos Matriculados por Mês",
+            labels={"mes": "Mês", "quantidade": "Nº de Alunos"}
+        )
+
+    elif tipo == "grafico_pizza":
+        # Número de alunos por plano
+        contagem = df["plano"].value_counts().reset_index()
+        contagem.columns = ["plano", "quantidade"]
+
+        fig = px.pie(
+            contagem, names="plano", values="quantidade",
+            title="Alunos por Plano"
+        )
+
+    else:
+        # Número de alunos cadastrados por unidade
+        contagem = df["unidade"].value_counts().reset_index()
+        contagem.columns = ["unidade", "quantidade"]
+
+        fig = px.bar(
+            contagem, x="unidade", y="quantidade",
+            title="Alunos Cadastrados por Unidade",
+            labels={"unidade": "Unidade", "quantidade": "Nº de Alunos"}
+        )
+
+    return Response(fig.to_json(), mimetype="application/json")
 
 @app.route("/registros/<int:id>", methods=["PUT"])
 def atualizar_registro(id):
@@ -57,20 +106,6 @@ def deletar_registro(id):
     df.to_csv(CSV_PATH, index=False)
 
     return jsonify({"mensagem": f"Registro {id} removido com sucesso"}), 200
-
-@app.route("/estatisticas")
-def estatisticas():
-    # Reagrega direto do CSV mais atual, garantindo dados frescos
-    global df
-    df = pd.read_csv(CSV_PATH)
-
-    por_unidade = df["unidade"].value_counts().to_dict()
-    por_plano = df["plano"].value_counts().to_dict()
-
-    return jsonify({
-        "por_unidade": por_unidade,
-        "por_plano": por_plano
-    })
 
 @app.route("/exportar")
 def exportar_csv():

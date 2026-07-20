@@ -35,7 +35,7 @@ registros = []
 for i in range(1, 201):
  registros.append({
  "id": i,
- "nome": random.choice(nomes) + f" {i}",
+ "nome": random.choice(nomes),
  "idade": random.randint(18, 65),
  "unidade": random.choice(unidades),
  "plano": random.choice(planos),

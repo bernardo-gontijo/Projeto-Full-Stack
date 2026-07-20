@@ -22,8 +22,8 @@ function renderizarTabela(dados) {
       <td>${cliente.objetivo}</td>
       <td>${cliente.data_matricula}</td>
       <td>
-        <button onclick="editarRegistro(${cliente.id})">Editar</button>
-        <button onclick="deletarRegistro(${cliente.id})">Excluir</button>
+        <button class="btn-editar" onclick="editarRegistro(${cliente.id})">Editar</button>
+        <button class="btn-excluir" onclick="deletarRegistro(${cliente.id})">Excluir</button>
       </td>
     `;
 
@@ -34,12 +34,12 @@ function renderizarTabela(dados) {
 // ================== CADASTRAR (chamado pelo botão do form) ==================
 function cadastrarCliente() {
   const novoCliente = {
-    nome: document.getElementById("nome").value,
+    nome: document.getElementById("nomecliente").value,
     telefone: document.getElementById("telefone").value,
     unidade: document.getElementById("unidade").value,
     plano: document.getElementById("plano").value,
     objetivo: document.getElementById("objetivo").value,
-    data_matricula: document.getElementById("data_matricula").value,
+    data_matricula: document.getElementById("datamatricula").value,
   };
 
   if (!novoCliente.nome || !novoCliente.telefone) {
@@ -63,6 +63,7 @@ async function criarRegistro(novosDados) {
   });
 
   listarRegistros();
+  carregarDashboard();
 }
 
 // ================== BUSCAR POR ID ==================
@@ -91,11 +92,9 @@ async function buscarPorId() {
 
 // ================== EDITAR ==================
 async function editarRegistro(id) {
-  // Busca os dados atuais para preencher os prompts
   const resp = await fetch(`/registros/${id}`);
   if (!resp.ok) return;
   const cliente = await resp.json();
-  console.log(cliente); 
 
   const nome = prompt("Nome:", cliente.nome) ?? cliente.nome;
   const telefone = prompt("Telefone:", cliente.telefone) ?? cliente.telefone;
@@ -113,6 +112,7 @@ async function editarRegistro(id) {
   });
 
   listarRegistros();
+  carregarDashboard();
 }
 
 // ================== DELETAR ==================
@@ -122,6 +122,7 @@ async function deletarRegistro(id) {
 
   await fetch(`/registros/${id}`, { method: "DELETE" });
   listarRegistros();
+  carregarDashboard();
 }
 
 // ================== EXPORTAR CSV ==================
@@ -129,5 +130,22 @@ function exportarCSV() {
   window.location.href = "/exportar";
 }
 
+// ================== DASHBOARD (PLOTLY) ==================
+async function carregarDashboard() {
+  const tipo = document.getElementById("tipoGrafico").value;
+
+  const resp = await fetch(`/estatisticas?tipo=${tipo}`);
+  if (!resp.ok) return;
+
+  const figura = await resp.json();
+
+  // figura já vem pronta do backend (plotly.express -> fig.to_json())
+  // contém "data" e "layout"
+  Plotly.react("graficoDashboard", figura.data, figura.layout, { responsive: true });
+}
+
 // ================== INICIALIZAÇÃO ==================
-document.addEventListener("DOMContentLoaded", listarRegistros);
+document.addEventListener("DOMContentLoaded", () => {
+  listarRegistros();
+  carregarDashboard();
+});

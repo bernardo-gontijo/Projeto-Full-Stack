@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <title>CRUD de Registros de Clientes Academia</title>
     <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="ico">
+    <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
 </head>
 
 <body>
 
 <h1>Sistema de Gestão de Academia</h1>
 
-<!-- ===== FORMULÁRIO DE CADASTRO ===== -->
+<!-- FORMULÁRIO DE CADASTRO -->
 <section id="cadastro">
     <h2>Cadastro de Clientes</h2>
 
@@ -70,7 +72,7 @@
 
 <hr>
 
-<!-- ===== BUSCA POR ID ===== -->
+<!-- BUSCA POR ID -->
 <section id="busca">
     <h2>Buscar Cliente por ID</h2>
 
@@ -82,7 +84,23 @@
 
 <hr>
 
-<!-- ===== TABELA DE REGISTROS ===== -->
+<!-- DASHBOARD -->
+<section id="dashboard">
+    <h2>Dashboard</h2>
+
+    <label for="tipoGrafico">Ver por:</label>
+    <select id="tipoGrafico" onchange="carregarDashboard()">
+        <option value="grafico_linha">Número de alunos matriculados por mês</option>
+        <option value="grafico_barra">Número de alunos cadastrados por unidade</option>
+        <option value="grafico_pizza">Número de alunos por plano</option>
+    </select>
+
+    <div id="graficoDashboard" style="max-width: 700px; margin-top: 20px;"></div>
+</section>
+
+<hr>
+
+<!-- TABELA DE REGISTROS -->
 <section id="tabela">
     <h2>Clientes Cadastrados</h2>
 
@@ -109,24 +127,7 @@
 
 <hr>
 
-<!-- ===== DASHBOARD ===== -->
-<section id="dashboard">
-    <h2>Dashboard</h2>
-
-    <label for="tipoGrafico">Ver por:</label>
-    <select id="tipoGrafico" onchange="carregarDashboard()">
-        <option value="por_unidade">Unidade</option>
-        <option value="por_plano">Plano</option>
-    </select>
-
-    <div style="max-width: 600px; margin-top: 20px;">
-        <canvas id="graficoDashboard"></canvas>
-    </div>
-</section>
-
-<hr>
-
-<!-- ===== EXPORTAR CSV ===== -->
+<!-- EXPORTAR CSV -->
 <section id="exportar">
     <button onclick="exportarCSV()">Exportar CSV</button>
 </section>
