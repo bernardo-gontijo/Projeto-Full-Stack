@@ -34,12 +34,12 @@ function renderizarTabela(dados) {
 // ================== CADASTRAR (chamado pelo botão do form) ==================
 function cadastrarCliente() {
   const novoCliente = {
-    nome: document.getElementById("nomecliente").value,
+    nome: document.getElementById("nome").value,
     telefone: document.getElementById("telefone").value,
     unidade: document.getElementById("unidade").value,
     plano: document.getElementById("plano").value,
     objetivo: document.getElementById("objetivo").value,
-    data_matricula: document.getElementById("datamatricula").value,
+    data_matricula: document.getElementById("data_matricula").value,
   };
 
   if (!novoCliente.nome || !novoCliente.telefone) {
@@ -122,7 +122,6 @@ async function deletarRegistro(id) {
 
   await fetch(`/registros/${id}`, { method: "DELETE" });
   listarRegistros();
-  carregarDashboard();
 }
 
 // ================== EXPORTAR CSV ==================

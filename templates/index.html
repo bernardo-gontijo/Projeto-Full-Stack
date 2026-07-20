@@ -19,7 +19,12 @@
     <form id="formCadastro">
         Nome do Cliente
         <br>
-        <input type="text" id="nomecliente" name="nomecliente">
+        <input type="text" id="nome" name="nome">
+        <br><br>
+
+        Idade
+        <br>
+        <input type="number" id="idade" name="idade">
         <br><br>
 
         Telefone
@@ -61,10 +66,10 @@
 
         Data de Matrícula
         <br>
-        <input type="date" id="datamatricula" name="datamatricula">
+        <input type="date" id="data_matricula" name="data_matricula">
         <br><br>
 
-        <input type="button" value="Cadastrar" onclick="cadastrarCliente()">
+        <button onclick="cadastrarCliente()">Cadastrar</button>
     </form>
 
     <p id="mensagemCadastro"></p>
