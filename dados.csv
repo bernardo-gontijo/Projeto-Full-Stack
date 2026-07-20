@@ -1,0 +1,201 @@
+id,nome,idade,unidade,plano,objetivo,data_matricula,telefone
+1,Paulo 1,25,Flores,Avançado,Condicionamento,2023-05-17,(92) 93657-3286
+2,Yago 2,24,Morada,Avançado,Emagrecimento,2025-04-24,(92) 96912-1520
+3,Bruno 3,23,Torres,Básico,Emagrecimento,2025-02-23,(92) 93257-9928
+4,Bianca 4,32,Centro,Avançado,Condicionamento,2026-07-16,(92) 90106-3615
+5,Valentina 5,45,Cidade Nova,Intermediário,Hipertrofia,2023-03-17,(92) 95514-2674
+6,Elisa 6,42,Flores,Intermediário,Condicionamento,2025-05-21,(92) 94333-1711
+7,Kauan 7,47,Alvorada,Básico,Performance,2022-06-11,(92) 99044-5803
+8,Paulo 8,57,Japiim,Intermediário,Hipertrofia,2025-12-13,(92) 91139-1750
+9,Sabrina 9,32,Japiim,Intermediário,Emagrecimento,2023-04-22,(92) 91654-7227
+10,Queila 10,47,Morada,Intermediário,Hipertrofia,2024-01-29,(92) 95820-4432
+11,Sabrina 11,35,Morada,Avançado,Emagrecimento,2025-06-01,(92) 92803-9751
+12,Kauan 12,33,Torres,Intermediário,Performance,2023-07-07,(92) 99125-4598
+13,Thiago 13,38,Japiim,Básico,Hipertrofia,2022-03-07,(92) 95168-7572
+14,Queila 14,22,Torres,Avançado,Condicionamento,2023-03-12,(92) 98179-7482
+15,Rodrigo 15,47,Torres,Intermediário,Hipertrofia,2023-05-21,(92) 99197-9830
+16,Pedro 16,65,Alvorada,Intermediário,Performance,2024-01-12,(92) 93593-3266
+17,Helena 17,49,Flores,Básico,Emagrecimento,2022-11-10,(92) 92621-7916
+18,Natália 18,22,Centro,Intermediário,Performance,2024-12-19,(92) 94119-1188
+19,Thiago 19,64,Flores,Avançado,Condicionamento,2026-04-24,(92) 95573-2827
+20,Rafael 20,45,Torres,Intermediário,Emagrecimento,2026-01-18,(92) 94315-9201
+21,Zinedine 21,29,Alvorada,Básico,Condicionamento,2025-08-01,(92) 98317-4258
+22,Isabela 22,41,Japiim,Básico,Emagrecimento,2025-05-11,(92) 95310-9005
+23,Bruno 23,25,Cidade Nova,Intermediário,Hipertrofia,2022-04-29,(92) 93946-2290
+24,Elisa 24,64,Centro,Básico,Hipertrofia,2022-09-20,(92) 97787-3705
+25,Pedro 25,51,Japiim,Avançado,Performance,2023-03-10,(92) 98835-4295
+26,Walter 26,37,Centro,Avançado,Condicionamento,2024-06-16,(92) 98479-8397
+27,Gabriela 27,33,Torres,Básico,Condicionamento,2022-02-13,(92) 99638-4770
+28,Marcelo 28,32,Flores,Básico,Emagrecimento,2023-04-14,(92) 91104-1514
+29,Ursula 29,22,Alvorada,Básico,Condicionamento,2025-10-02,(92) 97953-4510
+30,Juliana 30,26,Morada,Avançado,Performance,2023-05-13,(92) 97749-7669
+31,Lucas 31,24,Flores,Avançado,Performance,2023-12-27,(92) 96939-7735
+32,Eduardo 32,64,Flores,Avançado,Emagrecimento,2022-05-05,(92) 96596-6559
+33,Fábio 33,33,Torres,Básico,Performance,2022-10-15,(92) 96912-4006
+34,Queila 34,47,Torres,Básico,Performance,2026-07-13,(92) 99016-2604
+35,Carla 35,59,Alvorada,Básico,Emagrecimento,2026-03-24,(92) 93872-3724
+36,Bianca 36,49,Centro,Básico,Performance,2022-05-01,(92) 92697-7209
+37,Ana 37,42,Cidade Nova,Intermediário,Condicionamento,2024-05-16,(92) 99105-8973
+38,Isabela 38,30,Cidade Nova,Básico,Emagrecimento,2025-04-01,(92) 98883-1998
+39,Yago 39,38,Flores,Básico,Performance,2024-10-26,(92) 98701-3579
+40,Carla 40,50,Flores,Básico,Emagrecimento,2025-05-03,(92) 91113-4853
+41,Amanda 41,25,Alvorada,Básico,Emagrecimento,2025-06-22,(92) 91343-7868
+42,Sabrina 42,55,Alvorada,Avançado,Condicionamento,2023-06-19,(92) 93346-6147
+43,Olívia 43,34,Centro,Básico,Condicionamento,2024-07-25,(92) 95180-2188
+44,Ana 44,47,Alvorada,Avançado,Emagrecimento,2022-05-31,(92) 98808-4492
+45,Helena 45,34,Torres,Intermediário,Emagrecimento,2023-05-16,(92) 96054-5669
+46,João 46,46,Japiim,Avançado,Condicionamento,2025-06-06,(92) 98666-1128
+47,Sabrina 47,53,Cidade Nova,Avançado,Emagrecimento,2022-10-03,(92) 94333-2891
+48,Fábio 48,65,Alvorada,Básico,Condicionamento,2023-08-01,(92) 99909-4450
+49,Walter 49,39,Torres,Avançado,Condicionamento,2024-11-01,(92) 98004-5114
+50,Carla 50,23,Morada,Intermediário,Condicionamento,2022-04-01,(92) 90058-6464
+51,Henrique 51,58,Cidade Nova,Básico,Performance,2025-02-03,(92) 97007-1158
+52,Gabriela 52,22,Morada,Básico,Emagrecimento,2024-01-27,(92) 99543-3426
+53,Caio 53,26,Flores,Intermediário,Condicionamento,2026-06-19,(92) 90653-6862
+54,Mariana 54,61,Torres,Avançado,Emagrecimento,2023-12-26,(92) 99173-7658
+55,Otávio 55,65,Torres,Básico,Hipertrofia,2026-06-27,(92) 92900-7755
+56,Bruno 56,29,Morada,Intermediário,Performance,2026-07-01,(92) 94065-5371
+57,João 57,62,Flores,Intermediário,Emagrecimento,2024-08-21,(92) 93644-4269
+58,Eduardo 58,40,Cidade Nova,Básico,Hipertrofia,2022-02-18,(92) 93164-7528
+59,Ursula 59,35,Japiim,Básico,Condicionamento,2023-12-21,(92) 98346-7548
+60,Thiago 60,52,Cidade Nova,Básico,Emagrecimento,2023-06-19,(92) 92925-5349
+61,Bernardo 61,24,Alvorada,Intermediário,Condicionamento,2026-02-01,(92) 95139-8149
+62,Natália 62,50,Flores,Intermediário,Hipertrofia,2023-06-06,(92) 90727-8144
+63,Ana 63,51,Japiim,Avançado,Hipertrofia,2024-01-16,(92) 97066-2146
+64,Sabrina 64,39,Alvorada,Intermediário,Emagrecimento,2026-01-14,(92) 94920-9308
+65,Sofia 65,60,Centro,Intermediário,Performance,2025-11-28,(92) 94844-3085
+66,Lucas 66,44,Morada,Intermediário,Hipertrofia,2025-06-14,(92) 99324-5930
+67,Amanda 67,53,Japiim,Básico,Condicionamento,2023-08-11,(92) 93443-8043
+68,Marcelo 68,56,Morada,Intermediário,Performance,2024-06-23,(92) 97244-4501
+69,Helena 69,48,Japiim,Avançado,Hipertrofia,2025-09-11,(92) 91389-5649
+70,Helena 70,60,Morada,Avançado,Condicionamento,2022-07-11,(92) 93848-6085
+71,Nicolas 71,30,Torres,Básico,Emagrecimento,2023-05-17,(92) 97784-2193
+72,Eduardo 72,44,Morada,Avançado,Hipertrofia,2026-01-11,(92) 96291-9099
+73,Amanda 73,33,Torres,Avançado,Emagrecimento,2026-03-18,(92) 91746-7965
+74,Nicolas 74,29,Japiim,Avançado,Performance,2022-04-13,(92) 99132-5082
+75,Gabriela 75,47,Torres,Intermediário,Condicionamento,2026-03-27,(92) 97251-9270
+76,Caio 76,53,Centro,Básico,Performance,2024-07-10,(92) 94246-5050
+77,Paulo 77,35,Japiim,Avançado,Performance,2025-07-07,(92) 93919-5499
+78,Daniela 78,22,Morada,Intermediário,Hipertrofia,2023-07-11,(92) 95502-6238
+79,Juliana 79,23,Torres,Básico,Hipertrofia,2024-02-24,(92) 92503-4505
+80,Diego 80,44,Centro,Intermediário,Performance,2024-05-01,(92) 91020-4388
+81,Bianca 81,42,Japiim,Avançado,Emagrecimento,2026-04-17,(92) 99432-7232
+82,Fernanda 82,18,Cidade Nova,Intermediário,Performance,2024-05-08,(92) 98818-9947
+83,Natália 83,32,Centro,Básico,Condicionamento,2024-06-11,(92) 97956-1475
+84,Yasmin 84,39,Morada,Avançado,Performance,2026-01-23,(92) 92704-8657
+85,Henrique 85,57,Alvorada,Básico,Performance,2025-04-27,(92) 99246-1444
+86,Elisa 86,59,Centro,Básico,Performance,2023-01-08,(92) 90823-5262
+87,Yasmin 87,38,Torres,Intermediário,Condicionamento,2023-11-23,(92) 96211-5558
+88,Zinedine 88,44,Cidade Nova,Básico,Performance,2022-02-09,(92) 98837-1853
+89,Vitor 89,32,Morada,Básico,Emagrecimento,2026-03-25,(92) 90508-5051
+90,Lucas 90,19,Alvorada,Básico,Hipertrofia,2022-09-16,(92) 97758-2874
+91,Lethicia 91,31,Centro,Avançado,Condicionamento,2026-04-20,(92) 96043-3749
+92,Natália 92,56,Morada,Avançado,Emagrecimento,2026-05-12,(92) 92683-6096
+93,Fábio 93,55,Flores,Intermediário,Performance,2024-03-23,(92) 93249-2245
+94,Marcelo 94,62,Japiim,Avançado,Hipertrofia,2022-07-28,(92) 94941-2983
+95,Lethicia 95,20,Cidade Nova,Avançado,Performance,2025-09-16,(92) 96071-2129
+96,Helena 96,59,Cidade Nova,Básico,Performance,2024-09-30,(92) 91729-8102
+97,Wesley 97,58,Japiim,Intermediário,Hipertrofia,2024-06-10,(92) 92885-9548
+98,Rodrigo 98,35,Alvorada,Avançado,Performance,2024-08-10,(92) 97136-5397
+99,Tiago 99,33,Japiim,Básico,Condicionamento,2024-07-12,(92) 93995-8613
+100,Lethicia 100,57,Morada,Intermediário,Condicionamento,2022-02-28,(92) 98098-6325
+101,Karina 101,49,Torres,Intermediário,Condicionamento,2023-11-29,(92) 94581-5526
+102,Kevin 102,18,Alvorada,Básico,Emagrecimento,2023-05-10,(92) 96658-9004
+103,Kevin 103,33,Morada,Intermediário,Performance,2024-07-06,(92) 90282-2524
+104,Rafael 104,32,Centro,Avançado,Hipertrofia,2023-09-20,(92) 99528-7046
+105,Fernanda 105,53,Alvorada,Intermediário,Performance,2026-03-08,(92) 99017-6419
+106,Vitor 106,62,Centro,Intermediário,Condicionamento,2023-05-30,(92) 93777-2976
+107,Kauan 107,30,Cidade Nova,Básico,Hipertrofia,2023-01-28,(92) 93545-8933
+108,Queila 108,64,Alvorada,Avançado,Condicionamento,2022-07-25,(92) 93180-5853
+109,Nicolas 109,41,Torres,Intermediário,Emagrecimento,2025-12-21,(92) 98751-3073
+110,Queila 110,20,Flores,Avançado,Condicionamento,2025-11-29,(92) 92068-9042
+111,Fábio 111,18,Alvorada,Intermediário,Performance,2024-09-07,(92) 97216-6582
+112,Karina 112,21,Cidade Nova,Intermediário,Emagrecimento,2022-05-14,(92) 96565-9056
+113,Diego 113,54,Morada,Avançado,Emagrecimento,2022-11-07,(92) 92444-5978
+114,Elisa 114,33,Flores,Avançado,Performance,2025-05-26,(92) 99766-4697
+115,Igor 115,42,Centro,Intermediário,Condicionamento,2025-04-20,(92) 97025-6003
+116,Lethicia 116,57,Flores,Avançado,Emagrecimento,2026-04-12,(92) 93404-4457
+117,Pedro 117,60,Flores,Básico,Hipertrofia,2022-12-22,(92) 99043-2229
+118,João 118,18,Centro,Intermediário,Performance,2023-08-20,(92) 90534-4792
+119,Rafael 119,63,Cidade Nova,Avançado,Performance,2022-05-26,(92) 93824-5334
+120,Paulo 120,55,Morada,Básico,Performance,2022-08-24,(92) 98922-4683
+121,Rodrigo 121,27,Cidade Nova,Básico,Emagrecimento,2022-05-03,(92) 92718-6039
+122,Natália 122,65,Japiim,Avançado,Condicionamento,2024-06-18,(92) 92037-8679
+123,Valentina 123,37,Morada,Intermediário,Condicionamento,2024-10-21,(92) 98847-9090
+124,Daniela 124,23,Alvorada,Básico,Performance,2026-02-13,(92) 95280-5102
+125,Bruno 125,23,Torres,Avançado,Emagrecimento,2026-04-16,(92) 94415-1659
+126,Zinedine 126,29,Centro,Avançado,Performance,2023-07-24,(92) 92973-8141
+127,Paulo 127,49,Flores,Intermediário,Condicionamento,2024-04-16,(92) 95460-6260
+128,Sabrina 128,24,Japiim,Básico,Condicionamento,2024-04-23,(92) 98117-5722
+129,Sabrina 129,43,Japiim,Avançado,Emagrecimento,2024-07-20,(92) 91442-6153
+130,Pedro 130,38,Flores,Intermediário,Emagrecimento,2025-09-08,(92) 98889-8569
+131,Bianca 131,21,Torres,Avançado,Condicionamento,2025-06-29,(92) 98167-8242
+132,Zinedine 132,21,Torres,Intermediário,Hipertrofia,2023-08-13,(92) 97178-8941
+133,Gabriela 133,19,Morada,Avançado,Hipertrofia,2025-12-24,(92) 92594-6091
+134,Kevin 134,18,Alvorada,Intermediário,Emagrecimento,2023-04-06,(92) 91858-8560
+135,Gabriela 135,59,Japiim,Básico,Performance,2026-01-07,(92) 94781-9337
+136,Walter 136,35,Centro,Intermediário,Performance,2023-05-15,(92) 97483-3369
+137,Yasmin 137,30,Alvorada,Avançado,Hipertrofia,2022-05-23,(92) 94526-7798
+138,Ursula 138,50,Cidade Nova,Básico,Condicionamento,2026-01-26,(92) 94891-9022
+139,Isabela 139,46,Alvorada,Intermediário,Condicionamento,2023-11-12,(92) 99042-9903
+140,Yasmin 140,47,Cidade Nova,Básico,Hipertrofia,2025-03-17,(92) 96274-4826
+141,Bianca 141,20,Cidade Nova,Avançado,Performance,2025-12-15,(92) 96246-7325
+142,Sabrina 142,59,Torres,Intermediário,Emagrecimento,2022-09-16,(92) 98229-6439
+143,Fábio 143,46,Flores,Avançado,Performance,2022-02-01,(92) 92361-7717
+144,Rodrigo 144,27,Flores,Intermediário,Condicionamento,2023-11-25,(92) 96512-2315
+145,Ursula 145,61,Japiim,Avançado,Performance,2023-10-11,(92) 97994-9864
+146,Bernardo 146,57,Flores,Básico,Condicionamento,2023-04-11,(92) 91480-8110
+147,Fábio 147,58,Morada,Básico,Performance,2022-12-07,(92) 94906-1474
+148,Bernardo 148,38,Japiim,Básico,Condicionamento,2024-01-05,(92) 96141-8056
+149,Isabela 149,33,Alvorada,Intermediário,Hipertrofia,2022-12-15,(92) 92868-2293
+150,Otávio 150,42,Alvorada,Avançado,Hipertrofia,2024-10-16,(92) 99554-3344
+151,Nicolas 151,47,Morada,Intermediário,Performance,2023-06-07,(92) 90153-8622
+152,Rafael 152,61,Alvorada,Básico,Emagrecimento,2024-06-23,(92) 95661-5901
+153,Paulo 153,45,Morada,Intermediário,Performance,2023-09-11,(92) 93263-7302
+154,Fernanda 154,24,Torres,Intermediário,Condicionamento,2025-03-23,(92) 94847-5837
+155,Bruno 155,60,Centro,Intermediário,Emagrecimento,2025-03-05,(92) 90803-9138
+156,Rafael 156,32,Alvorada,Intermediário,Hipertrofia,2025-07-27,(92) 93115-5106
+157,Thiago 157,64,Japiim,Avançado,Hipertrofia,2025-07-10,(92) 91591-1645
+158,Sofia 158,46,Flores,Avançado,Condicionamento,2026-02-08,(92) 92153-2476
+159,Rafael 159,38,Morada,Intermediário,Hipertrofia,2023-02-16,(92) 92165-9837
+160,Wesley 160,51,Alvorada,Intermediário,Hipertrofia,2023-06-11,(92) 97894-5835
+161,Yago 161,39,Japiim,Básico,Performance,2022-06-04,(92) 92306-4696
+162,Thiago 162,64,Morada,Intermediário,Condicionamento,2022-07-04,(92) 96464-1228
+163,Pedro 163,52,Flores,Intermediário,Condicionamento,2025-10-09,(92) 94295-7242
+164,Paulo 164,41,Flores,Avançado,Hipertrofia,2024-08-23,(92) 90410-6374
+165,Otávio 165,32,Morada,Básico,Performance,2025-12-06,(92) 94951-7689
+166,Gabriela 166,26,Flores,Básico,Condicionamento,2024-10-05,(92) 91902-2592
+167,Olívia 167,52,Torres,Intermediário,Performance,2024-01-30,(92) 98850-7866
+168,Marcelo 168,65,Morada,Básico,Performance,2025-09-03,(92) 91622-9017
+169,Otávio 169,44,Cidade Nova,Básico,Condicionamento,2023-03-21,(92) 97264-8285
+170,Olívia 170,41,Flores,Avançado,Condicionamento,2025-01-20,(92) 95876-1992
+171,Amanda 171,35,Torres,Básico,Performance,2022-07-07,(92) 93475-1349
+172,Carla 172,39,Torres,Básico,Hipertrofia,2022-05-21,(92) 99080-4394
+173,Marcelo 173,31,Japiim,Básico,Condicionamento,2026-05-05,(92) 92417-1046
+174,Queila 174,27,Torres,Avançado,Condicionamento,2026-06-24,(92) 92858-2801
+175,Sabrina 175,19,Torres,Básico,Condicionamento,2026-06-06,(92) 93898-6304
+176,Bruno 176,29,Cidade Nova,Básico,Hipertrofia,2026-02-28,(92) 96897-9619
+177,Gabriela 177,65,Flores,Intermediário,Performance,2026-05-13,(92) 95931-9408
+178,Marcelo 178,24,Centro,Avançado,Hipertrofia,2025-06-13,(92) 90710-9543
+179,Sofia 179,47,Morada,Básico,Emagrecimento,2024-09-07,(92) 96580-7984
+180,Thiago 180,24,Centro,Avançado,Performance,2022-05-31,(92) 91323-6277
+181,Natália 181,27,Flores,Básico,Condicionamento,2025-07-02,(92) 99590-9984
+182,Walter 182,38,Centro,Avançado,Condicionamento,2024-07-18,(92) 98282-8048
+183,Fábio 183,62,Flores,Avançado,Hipertrofia,2024-05-30,(92) 97398-4743
+184,Bianca 184,39,Japiim,Intermediário,Performance,2024-05-01,(92) 91557-6120
+185,Caio 185,38,Morada,Intermediário,Condicionamento,2022-11-09,(92) 97770-2099
+186,Elisa 186,23,Flores,Intermediário,Emagrecimento,2026-03-05,(92) 96105-3131
+187,Kevin 187,21,Alvorada,Avançado,Condicionamento,2025-10-04,(92) 92002-7730
+188,Vitor 188,60,Japiim,Intermediário,Emagrecimento,2023-08-13,(92) 99837-6119
+189,Vitor 189,24,Alvorada,Avançado,Hipertrofia,2022-11-13,(92) 97900-4674
+190,Fábio 190,40,Japiim,Avançado,Condicionamento,2022-08-24,(92) 94564-4705
+191,Caio 191,53,Japiim,Avançado,Emagrecimento,2025-06-01,(92) 94381-1474
+192,Karina 192,35,Morada,Intermediário,Condicionamento,2023-12-20,(92) 90100-3972
+193,Isabela 193,54,Morada,Intermediário,Emagrecimento,2022-10-18,(92) 90502-2503
+194,Yago 194,51,Torres,Intermediário,Performance,2024-07-18,(92) 95585-3578
+195,Wesley 195,37,Morada,Intermediário,Emagrecimento,2022-04-18,(92) 92549-3579
+196,Zinedine 196,57,Flores,Avançado,Emagrecimento,2023-07-12,(92) 97259-7947
+197,Gabriel 197,56,Centro,Intermediário,Condicionamento,2023-03-18,(92) 98394-2864
+198,Vitor 198,45,Flores,Intermediário,Performance,2024-12-15,(92) 95053-1744
+199,Nicolas 199,43,Alvorada,Básico,Emagrecimento,2023-02-23,(92) 94938-4460
+200,Henrique 200,34,Cidade Nova,Intermediário,Emagrecimento,2022-01-16,(92) 98149-8055
