@@ -74,6 +74,14 @@ def estatisticas():
             labels={"unidade": "Unidade", "quantidade": "Nº de Alunos"}
         )
 
+    fig.update_layout(
+        paper_bgcolor="rgba(0,0,0,0)",  # Fundo externo transparente
+        plot_bgcolor="rgba(0,0,0,0)",   # Fundo do gráfico transparente
+        font_color="#FFFFFF",           # Cor do texto em branco para combinar com o modo escuro
+        margin=dict(l=20, r=20, t=40, b=20),
+        autosize=True
+    )
+        
     return Response(fig.to_json(), mimetype="application/json")
 
 @app.route("/registros/<int:id>", methods=["PUT"])
