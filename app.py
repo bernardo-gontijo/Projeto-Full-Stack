@@ -1,9 +1,13 @@
-from flask import Flask, request, jsonify, send_file
+from flask import Flask, request, jsonify, send_file, render_template
 import pandas as pd
 
 app = Flask(__name__)
 CSV_PATH = "dados.csv"
 df = pd.read_csv(CSV_PATH)
+
+@app.route("/")
+def inicio():
+    return render_template("index.html")
 
 @app.route("/registros", methods=["GET"])
 def listar():
