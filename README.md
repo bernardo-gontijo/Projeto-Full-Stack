@@ -14,7 +14,7 @@ Projeto full stack com **Python + Flask** no backend e **HTML, CSS, JavaScript e
 |--------------------|-----------|-------------------------------------------------|
 | `id`               | Integer   | Identificador único do cliente                  |
 | `telefone`         | Integer   | Telefone do Cliente                             |
-| `data_matricula`   | Integer   | Data de matricula do cliente                    |
+| `data_matricula`   | Date      | Data de matricula do cliente                    |
 | `nome`             | String    | Nome completo do cliente                        |
 | `unidade`          | String    | Unidade da academia onde o cliente está matriculado |
 | `plano`            | String    | Plano contratado (mensal, trimestral, anual...)  |
