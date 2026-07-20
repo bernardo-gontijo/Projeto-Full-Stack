@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>CRUD de Registros de Clientes Academia</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+
+<h1>Sistema de Gestão de Academia</h1>
+
+<!-- ===== FORMULÁRIO DE CADASTRO ===== -->
+<section id="cadastro">
+    <h2>Cadastro de Clientes</h2>
+
+    <form id="formCadastro">
+        Nome do Cliente
+        <br>
+        <input type="text" id="nomecliente" name="nomecliente">
+        <br><br>
+
+        Telefone
+        <br>
+        <input type="text" id="telefone" name="telefone">
+        <br><br>
+
+        Unidade
+        <br>
+        <select id="unidade" name="unidade">
+            <option>Flores</option>
+            <option>Torres</option>
+            <option>Cidade Nova</option>
+            <option>Centro</option>
+            <option>Alvorada</option>
+            <option>Morada</option>
+            <option>Japiim</option>
+        </select>
+        <br><br>
+
+        Plano
+        <br>
+        <select id="plano" name="plano">
+            <option>BÁSICO</option>
+            <option>INTERMEDIÁRIO</option>
+            <option>AVANÇADO</option>
+        </select>
+        <br><br>
+
+        Objetivo
+        <br>
+        <select id="objetivo" name="objetivo">
+            <option>Emagrecimento</option>
+            <option>Hipertrofia</option>
+            <option>Condicionamento</option>
+            <option>Performance</option>
+        </select>
+        <br><br>
+
+        Data de Matrícula
+        <br>
+        <input type="date" id="datamatricula" name="datamatricula">
+        <br><br>
+
+        <input type="button" value="Cadastrar" onclick="cadastrarCliente()">
+    </form>
+
+    <p id="mensagemCadastro"></p>
+</section>
+
+<hr>
+
+<!-- ===== BUSCA POR ID ===== -->
+<section id="busca">
+    <h2>Buscar Cliente por ID</h2>
+
+    <input type="number" id="idBusca" placeholder="Digite o ID">
+    <button onclick="buscarPorId()">Buscar</button>
+
+    <p id="resultadoBusca"></p>
+</section>
+
+<hr>
+
+<!-- ===== TABELA DE REGISTROS ===== -->
+<section id="tabela">
+    <h2>Clientes Cadastrados</h2>
+
+    <div style="overflow-x: auto;">
+        <table id="tabelaClientes" border="1">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Telefone</th>
+                    <th>Unidade</th>
+                    <th>Plano</th>
+                    <th>Objetivo</th>
+                    <th>Data Matrícula</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="corpoTabela">
+                <!-- preenchido via JavaScript -->
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<hr>
+
+<!-- ===== EXPORTAR CSV ===== -->
+<section id="exportar">
+    <button onclick="exportarCSV()">Exportar CSV</button>
+</section>
+
+<script src="/static/js/main.js"></script>
+</body>
+</html>
