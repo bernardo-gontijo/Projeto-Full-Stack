@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, send_file
 import pandas as pd
 
 app = Flask(__name__)
@@ -57,6 +57,17 @@ def deletar_registro(id):
     df.to_csv(CSV_PATH, index=False)
 
     return jsonify({"mensagem": f"Registro {id} removido com sucesso"}), 200
+
+@app.route("/exportar")
+def exportar_csv():
+    df.to_csv(CSV_PATH, index=False)
+    return send_file(
+        CSV_PATH,
+        mimetype="text/csv",
+        as_attachment=True,
+        download_name="dados_exportados.csv"
+    )
+
 
 
 if __name__ == "__main__":
